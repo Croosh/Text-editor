@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Text Editor</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">Simple Text Editor</h1>
+    <div class="text-editor">
+      <textarea id="inputText" class="input-text" placeholder="Paste your text here"></textarea>
+      <div class="buttons">
+        <button class="action-btn" onclick="capitalizeText()"><i class="fas fa-font"></i> Capitalize</button>
+        <button class="action-btn" onclick="lowercaseText()"><i class="fas fa-font"></i> Lowercase</button>
+        <button class="action-btn" onclick="replaceText()"><i class="fas fa-exchange-alt"></i> Replace</button>
+      </div>
+      <div class="replace-inputs">
+        <input type="text" id="textToReplace" class="form-control" placeholder="Text to Replace">
+        <input type="text" id="replacementText" class="form-control" placeholder="Replacement Text">
+      </div>
+      <div class="paragraph-text">
+        <input type="text" id="startParagraphText" class="form-control" placeholder="Text to add at the start of each paragraph">
+        <input type="text" id="endParagraphText" class="form-control" placeholder="Text to add at the end of each paragraph">
+      </div>
+      <button class="copy-btn" onclick="copyText()"><i class="far fa-copy"></i> Copy Text</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
